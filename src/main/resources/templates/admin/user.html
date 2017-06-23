@@ -18,9 +18,9 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
+								<a href="#"><label th:text="#{home}"></label></a>
 							</li>
-							<li class="active">User</li>
+							<li class="active"><label th:text="#{user}"></label></li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -34,23 +34,23 @@
 					</div>
 						<div class="page-header">
 							<h1>
-								User
+								<label th:text="#{list-user}"></label>
 								
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									user &amp; jquery dataTables
+									<label th:text="#{user}"></label> &amp; <label th:text="#{table}"></label>
 								</small>
 							</h1>
 						</div>
 					<div class="row">
 									<div class="col-xs-12">
-										<h3 class="header smaller lighter blue"><b>jQuery dataTables</b></h3>
+										<h3 class="header smaller lighter blue"><b><label th:text="#{list-user}"></label></b></h3>
 
 										<div class="clearfix">
 											<div class="pull-right tableTools-container"></div>
 										</div>
 										<div class="table-header">
-											Results for "Latest Registered Domains"
+											<label th:text="#{result} + #{user-list} + #{table}"></label>
 										</div>
 
 										<!-- div.table-responsive -->
@@ -66,11 +66,11 @@
 																<span class="lbl"></span>
 															</label>
 														</th>
-														<th>Name</th>
-														<th>Gender</th>
-														<th class="hidden-480">Age</th>
-														<td>Email</td>
-														<th class="hidden-480">Status</th>
+														<th><label th:text="#{name}"></label></th>
+														<th><label th:text="#{gender}"></label></th>
+														<th class="hidden-480"><label th:text="#{age}"></label></th>
+														<td><label th:text="#{email}"></label></td>
+														<th class="hidden-480"><label th:text="#{status}"></label></th>
 														<th></th>
 													</tr>
 												</thead>
