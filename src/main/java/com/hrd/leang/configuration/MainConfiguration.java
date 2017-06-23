@@ -1,7 +1,10 @@
-package com.hrd.configuration;
+package com.hrd.leang.configuration;
 
 import java.util.Locale;
 
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.WebMvcProperties.LocaleResolver;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +20,7 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
 @Configuration
 @EnableWebMvc
+
 public class MainConfiguration extends WebMvcConfigurerAdapter {
 
 	
@@ -35,7 +39,6 @@ public class MainConfiguration extends WebMvcConfigurerAdapter {
 		registry.addViewController("/admin/role-list").setViewName("/admin/role-list");
 		registry.addViewController("/admin/role-cu").setViewName("/admin/role-cu");
 	}
-	
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {

@@ -102,10 +102,10 @@
 						</div><!-- /.ace-settings-container -->
 						<div class="page-header">
 							<h1>
-								Dashboard
+								<label th:text="#{role-cu}"></label>
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									overview &amp; stats
+									<label th:text="#{form}"></label>
 								</small>
 							</h1>
 						</div>
@@ -114,7 +114,7 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<form class="form-horizontal" role="form">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Username </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"  th:text="#{user-name}"> </label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" placeholder="Username" class="col-xs-10 col-sm-5" />
@@ -123,33 +123,33 @@
 									<div class="form-group">
 															
 															<select class="col-xs-10 col-sm-5" id="form-field-1" data-placeholder="Choose a State...">
-																<option value="AL">Male</option>
-																<option value="AK">Female</option>
+																<option value="AL"><label th:text="#{male}"></label></option>
+																<option value="AK"><label th:text="#{female}"></label></option>
 															</select>
 														</div>
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Age </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" th:text="#{age}"> </label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" placeholder="your age" class="col-xs-10 col-sm-5" />
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Email </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" th:text="#{email}"> </label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" placeholder="your email" class="col-xs-10 col-sm-5" />
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Phone </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" th:text="#{phone-number}"></label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" placeholder="status" class="col-xs-10 col-sm-5" />
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Permission </label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1" th:text="#{position}"> </label>
 
 										<div class="col-sm-9">
 											<input type="text" id="form-field-1" placeholder="status" class="col-xs-10 col-sm-5" />
@@ -159,13 +159,13 @@
 										<div class="col-md-offset-3 col-md-9">
 											<button class="btn btn-info" type="button">
 												<i class="ace-icon fa fa-check bigger-110"></i>
-												Submit
+												<lable th:text="#{submit}"></lable>
 											</button>
 
 											&nbsp; &nbsp; &nbsp;
 											<button class="btn" type="reset">
 												<i class="ace-icon fa fa-undo bigger-110"></i>
-												Reset
+												<lable th:text="#{reset}"></lable>
 											</button>
 										</div>
 									</div>
